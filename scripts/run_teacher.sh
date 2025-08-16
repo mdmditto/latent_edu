@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
-source .venv/bin/activate
-set -a
-[ -f .env ] && source .env
-set +a
+# DON'T source .venv here; we are using the active conda env.
+echo "Python: $(which python)"; python -V
+echo "Pip:    $(which pip)";    pip -V
 
 python scripts/build_teacher_concepts_codellama.py \
   --model "${MODEL_NAME:-codellama/CodeLlama-7b-Instruct-hf}" \
