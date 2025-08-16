@@ -1,0 +1,9 @@
+torch
+transformers
+accelerate
+datasets
+scikit-learn
+numpy
+regex
+# optional VRAM saver
+bitsandbytes
