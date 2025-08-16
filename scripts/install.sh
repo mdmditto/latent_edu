@@ -2,7 +2,7 @@
 set -euo pipefail
 source .venv/bin/activate
 pip install --upgrade pip
-pip install -r requirements.txt
+
 
 # (optional) login to huggingface if the model requires acceptance
 # HUGGINGFACE_TOKEN must be set in env if you do this non-interactively
